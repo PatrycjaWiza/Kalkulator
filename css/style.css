@@ -1,9 +1,9 @@
-body {
-  width: 2700px;
-  height: 800px;
+:root {
+  --spceial-font: "Quintessential", cursive;
 }
 p {
   padding: 0px;
+  margin: 0;
 }
 h1 {
   margin: 0px;
@@ -18,6 +18,7 @@ h1 {
   margin: 80px auto;
   display: block;
   padding: 25px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 /* === title === */
 .title {
@@ -25,21 +26,34 @@ h1 {
   justify-content: space-between;
   align-items: center;
   height: 30px;
+  padding-bottom: 30px;
+  padding-top: 15px;
 }
 .title-name {
   font-size: 25px;
   display: flex;
   align-items: center;
   margin-right: 100px;
+  padding-left: 22px;
 }
 .title-icon:not(:first-child) {
   margin-left: 80px;
 }
-.title-icon:hover {
-  fill: rgb(100, 94, 109);
+.icon-wrapper {
+  display: flex;
 }
-.title-icon.exit:hover {
-  fill: tomato;
+.title-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+.title-icon-wrapper:hover {
+  background-color: rgb(184, 176, 196);
+}
+.title-icon-wrapper.exit:hover {
+  background-color: rgba(243, 54, 85, 0.877);
 }
 /* === end title === */
 /* === submenu === */
@@ -53,8 +67,18 @@ h1 {
   font-size: 35px;
   font-weight: 500;
 }
-.submenu-icon:hover {
-  fill: rgb(100, 94, 109);
+.icon-menu {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-menu:hover {
+  background-color: rgb(184, 176, 196);
+}
+.icon-menu.clock:hover {
+  border: 1px solid rgb(152, 145, 161);
 }
 /* === end submenu === */
 
@@ -67,6 +91,8 @@ h1 {
 }
 .window-numbers {
   margin: 0px;
+  height: 180px;
+  padding-top: 50px;
 }
 /* === end calculating window === */
 /* === memory btns === */
@@ -96,6 +122,9 @@ h1 {
 /* === end memory btns === */
 
 /* === calc buttons === */
+.s-font {
+  font-family: var(--spceial-font);
+}
 .calc-btn-list {
   display: flex;
   flex-wrap: wrap;
