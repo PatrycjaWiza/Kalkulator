@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- title -->
+      <section class="title">
+        <p class="title-name">Kalkulator</p>
+        <div class="icon-wrapper">
+          <div class="title-icon-wrapper">
+            <svg class="title-icon" width="20" height="40">
+              <use href="sprite.svg#icon-minus"></use>
+            </svg>
+          </div>
+          <div class="title-icon-wrapper">
+            <svg class="title-icon" width="20" height="40">
+              <use href="sprite.svg#icon-checkbox-unchecked"></use>
+            </svg>
+          </div>
+          <div class="title-icon-wrapper exit">
+            <svg class="title-icon exit" width="20" height="40">
+              <use href="sprite.svg#icon-cross"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- submenu-->
+      <section class="submenu">
+        <div class="icon-menu">
+          <svg class="submenu-icon" width="40" height="80">
+            <use href="sprite.svg#icon-menu"></use>
+          </svg>
+        </div>
+
+        <h1 class="submenu-name">Standardowy</h1>
+        <div class="icon-menu clock">
+          <svg class="submenu-icon" width="40" height="80">
+            <use href="sprite.svg#icon-history"></use>
+          </svg>
+        </div>
+      </section>
+      <!-- calculating window -->
+      <section class="window">
+        <p class="window-numbers">123.4</p>
+      </section>
+      <!-- memory buttons -->
+      <section class="memory">
+        <ul class="memory-list list">
+          <li class="memory-item grey">MC</li>
+          <li class="memory-item grey">MR</li>
+          <li class="memory-item">M+</li>
+          <li class="memory-item">M-</li>
+          <li class="memory-item">MS</li>
+          <li class="memory-item grey">M&#129171;</li>
+        </ul>
+      </section>
+      <!-- calculator buttons -->
+      <section class="calculator-buttons">
+        <ul class="calc-btn-list list">
+          <li class="calc-btn-item modal">%</li>
+          <li class="calc-btn-item modal">CE</li>
+          <li class="calc-btn-item modal">C</li>
+          <li class="calc-btn-item modal">
+            <svg class="calc-btn-icon">
+              <use href="sprite.svg#icon-backspace-outline"></use>
+            </svg>
+          </li>
+          <li class="calc-btn-item modal">
+            <sup>1</sup>&frasl;<sub class="s-font">x</sub>
+          </li>
+          <li class="calc-btn-item modal">
+            <span class="s-font">x</span><sup>2</sup>
+          </li>
+          <li class="calc-btn-item modal">
+            <sup>2</sup>&#8730;<span class="s-font">x</span>
+          </li>
+          <li class="calc-btn-item modal">&#247;</li>
+          <li class="calc-btn-item">7</li>
+          <li class="calc-btn-item">8</li>
+          <li class="calc-btn-item">9</li>
+          <li class="calc-btn-item modal">&#10005;</li>
+          <li class="calc-btn-item">4</li>
+          <li class="calc-btn-item">5</li>
+          <li class="calc-btn-item">6</li>
+          <li class="calc-btn-item modal">&#8722;</li>
+          <li class="calc-btn-item">1</li>
+          <li class="calc-btn-item">2</li>
+          <li class="calc-btn-item">3</li>
+          <li class="calc-btn-item modal">+</li>
+          <li class="calc-btn-item"><sup>+</sup>/<sub>-</sub></li>
+          <li class="calc-btn-item">0</li>
+          <li class="calc-btn-item">,</li>
+          <li class="calc-btn-item unique">=</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
