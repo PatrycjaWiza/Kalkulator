@@ -1,0 +1,142 @@
+body {
+  width: 2700px;
+  height: 800px;
+}
+p {
+  padding: 0px;
+}
+h1 {
+  margin: 0px;
+}
+.list {
+  list-style: none;
+}
+.container {
+  width: 700px;
+  height: 1080px;
+  background-color: rgb(209, 199, 224);
+  margin: 80px auto;
+  display: block;
+  padding: 25px;
+}
+/* === title === */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+.title-name {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+.title-icon:not(:first-child) {
+  margin-left: 80px;
+}
+.title-icon:hover {
+  fill: rgb(100, 94, 109);
+}
+.title-icon.exit:hover {
+  fill: tomato;
+}
+/* === end title === */
+/* === submenu === */
+.submenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.submenu-name {
+  margin-right: 250px;
+  font-size: 35px;
+  font-weight: 500;
+}
+.submenu-icon:hover {
+  fill: rgb(100, 94, 109);
+}
+/* === end submenu === */
+
+/* === calculating window === */
+.window {
+  font-size: 90px;
+  text-align: end;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.window-numbers {
+  margin: 0px;
+}
+/* === end calculating window === */
+/* === memory btns === */
+.memory-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 35px;
+  padding-left: 0;
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+}
+.memory-item {
+  width: 155px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+.grey {
+  color: darkgray;
+}
+.memory-item:hover {
+  border: 1px solid rgb(152, 145, 161);
+  background-color: rgb(199, 190, 212);
+}
+/* === end memory btns === */
+
+/* === calc buttons === */
+.calc-btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 35px;
+  align-items: center;
+  margin-right: -10px;
+  margin-top: -10px;
+  padding-left: 0;
+}
+.calc-btn-item {
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: rgb(160, 151, 172);
+  flex-basis: calc(100% / 4 - 10px);
+  text-align: center;
+  height: 90px;
+  padding-left: 0;
+  padding-top: 20px;
+}
+.calc-btn-item:hover {
+  background-color: rgb(105, 99, 112);
+}
+.calc-btn-item.modal {
+  background-color: rgb(191, 182, 204);
+}
+.calc-btn-item.modal:hover {
+  background-color: rgb(160, 152, 172);
+}
+.calculator-buttons {
+  padding-left: 0;
+}
+.calc-btn-icon {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 45px;
+}
+.unique {
+  background-color: sandybrown;
+}
+.unique:hover {
+  background-color: rgb(197, 133, 76);
+}
+/* === end calc buttons === */
